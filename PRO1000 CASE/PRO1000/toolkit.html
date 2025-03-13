@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" href="efalgo.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="aboutpage.html">About</a></li>
+          <li><a href="Resourcespage.html">Resources</a></li>
+          <li><a href="casestudypage.html">Case studies</a></li>
+          <li><a href="Contactpage.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="HomePage.html">GSD2SP</a></li>
+          <li class="hideOnMobile"><a href="aboutpage.html">About</a></li>
+          <li class="hideOnMobile"><a href="Resourcespage.html">Resources</a></li>
+          <li class="hideOnMobile"><a href="casestudypage.html">Case studies</a></li>
+          <li class="hideOnMobile"><a href="Contactpage.html">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+  <section id="blog-container">
+    <div class="blogs">
+      <div class="post">
+        <img src="toolkit.jpg" alt="">
+        <h3>What is Toolkits?</h3>
+        <p>One key aspect of sustainable programming toolkits is 
+            the focus on energy-efficient coding. These toolkits provide 
+            developers with guidelines for writing code that reduces energy 
+            consumption, such as using more efficient algorithms, optimizing 
+            performance, and eliminating unnecessary operations. By improving 
+            the efficiency of the code, toolkits help reduce the computational 
+            power needed, which in turn lowers the energy required to run the 
+            software.
+            <br><br>
+            Sustainable programming toolkits also 
+            support the use of green hosting and cloud computing practices. 
+            They often recommend cloud providers that prioritize renewable energy 
+            sources and offer best practices for reducing energy usage during 
+            deployment. This can include suggestions for scalable architecture, 
+            serverless computing, and other techniques that minimize the environmental 
+            impact of cloud services.
+            <br><br>
+            In addition to coding and infrastructure, 
+            toolkits in sustainable programming focus on the entire software 
+            development lifecycle. They provide resources for designing eco-friendly 
+            applications and conducting sustainability assessments. This includes 
+            evaluating the carbon footprint of the software and infrastructure to 
+            ensure that sustainability is integrated into the design, testing, and 
+            deployment stages.
+            <br><br>
+            Another important feature of these toolkits is their 
+            ability to calculate the carbon footprint of software. With integrated 
+            carbon footprint calculators, developers can assess the environmental 
+            impact of their code and make decisions that lower emissions. 
+            Additionally, some toolkits include sustainable user experience (UX) 
+            design principles, encouraging developers to create interfaces that are 
+            not only user-friendly but also energy-efficient.
+            <br><br>
+            In essence, toolkits in sustainable programming enable developers 
+            to create software that is environmentally responsible. They provide 
+            the tools necessary to reduce energy consumption, minimize waste, and 
+            support greener infrastructure. Through these resources, developers can 
+            make informed choices that help reduce the digital world’s environmental 
+            impact while promoting sustainability in technology.
+          </p> 
+        <a href="Resourcespage.html">Read More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Use cases</h4>
+                <ul>
+                  <li><a href="efalgo.html">Algorithms</a></li>
+                  <li><a href="opcode.html">Optimized code</a></li>
+                  <li><a href="susweb.html">Sustainable web design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Toolkits</h4>
+                <ul>
+                    <li><a href="toolkit.html">Tools</a></li>
+                    <li><a href="framework.html">Framework</a></li>
+                    <li><a href="check.html">Checklist</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="casestudypage.html">Case studies</a></li>
+                    <li><a href="Contactpage.html">FAQ</a></li>
+                    <li><a href="Contactpage.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

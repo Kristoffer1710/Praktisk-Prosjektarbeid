@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contactstyle.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="aboutpage.html">About</a></li>
+          <li><a href="Resourcespage.html">Resources</a></li>
+          <li><a href="casestudypage.html">Case studies</a></li>
+          <li><a href="Contactpage.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="HomePage.html">GSD2SP</a></li>
+          <li class="hideOnMobile"><a href="aboutpage.html">About</a></li>
+          <li class="hideOnMobile"><a href="Resourcespage.html">Resources</a></li>
+          <li class="hideOnMobile"><a href="casestudypage.html">Case studies</a></li>
+          <li class="hideOnMobile"><a href="Contactpage.html">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+     <section id="hero">
+<div class="container">
+    <form>
+      <h1>Contact Us Form</h1>
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="mobile" placeholder="Mobile" required />
+      <h4>Type Your Message Here...</h4>
+      <textarea required></textarea>
+      <input type="submit" value="Send" id="button" />
+    </form>
+  </div>
+</section>
+
+<div class="wrapper">
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq">
+    <button class="accordion">
+      What is Green Programming?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        Green programming refers to writing software that is energy-efficient 
+        and reduces the environmental impact of computing.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      How does it work?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        It works by optimizing code to use less computational power, 
+        reducing energy consumption, and utilizing efficient hardware and 
+        algorithms.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      What are the major challanges of current programming?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        Major challenges include complexity in managing large codebases, 
+        security vulnerabilities, performance optimization, scalability, 
+        and ensuring energy efficiency.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      How does green programming address the challanges above?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        Green programming addresses these challenges by optimizing 
+        code for efficiency, reducing resource consumption, and improving scalability. 
+        It enhances performance while minimizing energy use, which can also 
+        reduce security risks by lowering hardware strain.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="accordion">
+      How can I be a part of green programming?
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+      <p>
+        You can be a part of green programming by focusing on writing 
+        efficient, clean code, optimizing algorithms, using energy-efficient 
+        hardware, and adopting best practices like code profiling and minimizing 
+        resource consumption. Additionally, learning about sustainable 
+        development practices and contributing to open-source green tech 
+        projects can help.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      this.parentElement.classList.toggle("active");
+
+      var pannel = this.nextElementSibling;
+
+      if (pannel.style.display === "block") {
+        pannel.style.display = "none";
+      } else {
+        pannel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Use cases</h4>
+                    <ul>
+                      <li><a href="efalgo.html">Algorithms</a></li>
+                      <li><a href="opcode.html">Optimized code</a></li>
+                      <li><a href="susweb.html">Sustainable web design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Toolkits</h4>
+                    <ul>
+                        <li><a href="toolkit.html">Tools</a></li>
+                        <li><a href="framework.html">Framework</a></li>
+                        <li><a href="check.html">Checklist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="casestudypage.html">Case studies</a></li>
+                        <li><a href="Contactpage.html">FAQ</a></li>
+                        <li><a href="Contactpage.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+</body>
+</html>

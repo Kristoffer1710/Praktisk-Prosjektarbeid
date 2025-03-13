@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" href="efalgo.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="aboutpage.html">About</a></li>
+          <li><a href="Resourcespage.html">Resources</a></li>
+          <li><a href="casestudypage.html">Case studies</a></li>
+          <li><a href="Contactpage.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="HomePage.html">GSD2SP</a></li>
+          <li class="hideOnMobile"><a href="aboutpage.html">About</a></li>
+          <li class="hideOnMobile"><a href="Resourcespage.html">Resources</a></li>
+          <li class="hideOnMobile"><a href="casestudypage.html">Case studies</a></li>
+          <li class="hideOnMobile"><a href="Contactpage.html">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+  <section id="blog-container">
+    <div class="blogs">
+      <div class="post">
+        <img src="salesforce.png" alt="">
+        <h3>Salesforce's Net Zero Cloud</h3>
+        <p>Salesforce's Net Zero Cloud is a powerful
+             sustainability-focused platform designed
+              to help businesses manage their environmental
+               impact and work toward achieving net-zero carbon
+                emissions. As part of Salesforce's broader commitment 
+                to addressing climate change, the Net Zero Cloud provides 
+                organizations with the tools they need to track, reduce,
+                 and report on their carbon emissions.
+            <br><br>
+            The platform allows companies to monitor both direct 
+            and indirect carbon emissions across their entire value 
+            chain, including Scope 1, Scope 2, and Scope 3 emissions. 
+            This comprehensive tracking offers businesses a full picture of 
+            their environmental footprint, allowing them to make more informed
+             decisions about how to mitigate their impact. Through its centralized
+              data management, Net Zero Cloud consolidates emissions data into a
+               single platform, providing real-time insights, analytics, and
+                reporting capabilities.
+            <br><br>
+            Beyond tracking, Net Zero Cloud supports companies in setting and
+             achieving their sustainability goals. It provides businesses with tools
+              to model different reduction strategies and simulate various scenarios
+              , helping them identify the most effective ways to reduce their carbon
+               emissions. With these tools, companies can set actionable goals and 
+               continuously monitor their progress toward reaching net-zero emissions.
+            <br><br>
+            Furthermore, Salesforce’s Net Zero Cloud aligns with global 
+            sustainability reporting standards, ensuring that businesses 
+            can comply with regulations and share transparent updates with
+             stakeholders about their sustainability efforts. It also integrates
+              with other business systems, such as supply chain and energy
+               management platforms, to provide a more accurate, real-time 
+               understanding of emissions across various operations.
+            <br><br>
+            Overall, Salesforce’s Net Zero Cloud is a vital tool for 
+            organizations committed to reducing their carbon footprint 
+            and supporting the transition to a more sustainable, 
+            carbon-neutral future. It empowers businesses to take
+             meaningful action on climate change by enabling them 
+             to track, report, and ultimately reduce their environmental impact.
+          </p> 
+        <a href="casestudypage.html">Read More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Use cases</h4>
+                <ul>
+                  <li><a href="efalgo.html">Algorithms</a></li>
+                  <li><a href="opcode.html">Optimized code</a></li>
+                  <li><a href="susweb.html">Sustainable web design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Toolkits</h4>
+                <ul>
+                    <li><a href="toolkit.html">Tools</a></li>
+                    <li><a href="framework.html">Framework</a></li>
+                    <li><a href="check.html">Checklist</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="casestudypage.html">Case studies</a></li>
+                    <li><a href="Contactpage.html">FAQ</a></li>
+                    <li><a href="Contactpage.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
